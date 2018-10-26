@@ -1,6 +1,6 @@
 # vue-components
 
-> A caipiao app
+> A test app
 
 ## Build Setup
 
