@@ -1,0 +1,25 @@
+src
+    -| api-接口
+    -| assets-静态资源
+    -| components-组件库
+    -| config-自定义配置文件
+    -| router-路由
+    -| store-仓库
+    -| utils-工具类
+    -| views-视图
+    -| App.vue-vue文件入口
+    -| main.js-js入口
+视图模型
+view -| main-主视图
+     -| error-错误层(1000000)
+        |-| E1-网络错误
+        |-| E2-接口错误
+        |-| E3-路由错误
+     -| loading-加载层(100000)
+        |-| L1-主页面加载
+        |-| L2-列表页加载
+        |-| L3-详情页加载
+     -| advertisement-广告层(10000)
+        |-| A1-首次进入广告
+        |-| A2-首屏广告
+        |-| A3-内容广告

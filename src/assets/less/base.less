@@ -1,0 +1,188 @@
+//主题色
+@black: #000000;
+@white: #ffffff;
+@grey: #999999;
+@lightGrey: #CCCCCC;
+@red: #EE332B;
+@green: #2AC556;
+@orange: #DE6A1C;
+@yellow: #FDF9D7;
+
+//字号
+.fs-xs{
+  font-size: 0.3rem;
+}
+.fs-sm{
+  font-size: 0.35rem;
+}
+.fs-md{
+  font-size: 0.4rem;
+}
+.fs-lg{
+  font-size: 0.5rem;
+}
+.fs-xlg{
+  font-size: 1rem;
+}
+//字重
+.fw-b{
+  font-weight: bold;
+}
+.fw-n{
+  font-weight: normal;
+}
+//超出一行省略
+.fs-sl{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fs-sl-2{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+//浮动
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.cl{
+  clear: left;
+}
+.cr{
+  clear: right;
+}
+.cb{
+  clear: both;
+}
+
+.fc-red{
+  color: @red!important;
+}
+.fc-black{
+  color: @black!important;
+}
+.fc-green{
+  color: @green!important;
+}
+.fc-orange{
+  color: @orange!important;
+}
+.bgc-red{
+  background-color: @red!important;
+}
+.fc-grey{
+  color: @grey!important;
+}
+
+/*
+  flex：定义布局为盒模型
+  flex-v：盒模型垂直布局
+  flex-1：子元素占据剩余的空间
+  flex-align-center：子元素垂直居中
+  flex-pack-center：子元素水平居中
+  flex-pack-justify：子元素两端对齐
+*/
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-v {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-pack-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-pack-justify {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.fixed-full{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.5);
+}
+.common_list{
+  padding: 0 15px;
+  .common_item{
+    .flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #EFF0F4;
+    .item_title{
+      .flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 0.4rem;
+    }
+    .item_right{
+      .flex-1;
+      .flex;
+      font-size: 0.32rem;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  .common_item:last-child{
+    border-bottom: none;
+  }
+}
+
+.common-fixed-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 768px;
+  z-index: 10;
+  left: auto;
+  .btn-list{
+    .flex;
+    .item{
+      .flex-1;
+      .mu-raised-button{
+        border-radius: 0;
+      }
+      .btn-show{
+        font-size: 0.45rem;
+        height: 44px;
+        line-height: 44px;
+        padding: 0 10px;
+        background-color: @white;
+      }
+    }
+  }
+}
