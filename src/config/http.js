@@ -1,12 +1,12 @@
 const HTTP = {
   dev: {
-    url: 'http://luckbull.5918caip.com/luckybull'
+    url: 'http://localhost:8080'
   },
   test: {
-    url: 'http://luckbull.5918caip.com/luckybull'
+    url: 'http://localhost:8080'
   },
   pro: {
-    url: 'http://luckbull.5918caip.com/luckybull'
+    url: 'http://localhost:8080'
   }
 }
 

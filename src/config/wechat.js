@@ -1,9 +1,9 @@
 const WECHAT = {
   dev: {
-    AppID: 'wx9bc32cb5326ffeb6'
+    AppID: '123'
   },
   pro: {
-    AppID: 'wx1415d25a037612d5'
+    AppID: '123'
   }
 }
 
